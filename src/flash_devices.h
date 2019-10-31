@@ -424,4 +424,24 @@ typedef struct {
     .write_status_register_split = false, \
     .single_status_byte = false, \
 }
+
+// https://www.cypress.com/file/177961/download
+#define S25FL127S  {\
+    .total_size = (1 << 27), /* 128 MiB */ \
+    .start_up_time_us = 5000, \
+    .manufacturer_id = 0x01, \
+    .memory_type = 0x20, \
+    .capacity = 0x18, \
+    .max_clock_speed_mhz = 104, \
+    .quad_enable_bit_mask = 0x00, \
+    .has_sector_protection = false, \
+    .supports_fast_read = true, \
+    .supports_qspi = true, \
+    .supports_qspi_writes = true, \
+    .write_status_register_split = false, \
+    .single_status_byte = false, \
+}
+
+
+
 #endif  // MICROPY_INCLUDED_ATMEL_SAMD_EXTERNAL_FLASH_DEVICES_H

@@ -21,7 +21,7 @@ static const external_flash_device possible_devices[] =
   GD25Q16C, GD25Q64C,    // Main devices current Adafruit
   S25FL116K, S25FL216K,
   W25Q16FW, W25Q64JV_IQ, // Only a handful of production run
-
+  S25FL127S,
   MX25R6435F,            // Nordic PCA10056
 };
 
